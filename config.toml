@@ -1,0 +1,144 @@
+baseURL = "https://lucent-gelato-efedab.netlify.app"
+#baseURL = "https://example.com"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Rob Wiederstein"
+theme = "KeepIt"
+
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+disqusShortname = "yourdiscussshortname"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Dashboard"
+    url = "/Dashboard/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Datasets"
+    url = "/datasets"
+    weight = 5
+
+
+[params]
+    since = 2020
+    author = "Rob Wiederstein"               # Author's name
+    subtitle = "A blog about R, data, and public policy"       # Subtitle
+    cdn_url = ""           # Base CDN URL
+    home_mode = "" # post or other
+    dateFormatToUse = "" # set date format, default "2 January 2006"
+
+    google_verification = ""
+    bing_verification = ""
+    yandex_verification = ""
+    pinterest_verification = ""
+    baidu_verification = ""
+
+    #avatar = "/images/me/avatar.jpeg" #comment it to use gravatar
+    avatar = "/avatar.png"
+    socialShare = true
+
+    description = "A blog about data, coding, and public policy" # site description
+    keywords = "" # site keywords
+
+    license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.gravatar]
+    #email = "example@gmail.com"   #uncomment and insert your email address to use gravatar
+
+
+[params.social]
+    GitHub = "xxxx"
+    Linkedin = "xxxx"
+    Twitter = "xxxx"
+    #Email   = "xxxx"
+    #Codepen = "xxxx"
+    #Stackoverflow = "xxxxx"
+
+[params.share]
+Twitter = true
+Facebook = true
+Linkedin = true
+
+# Used only for Seo schema
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+[author]
+  name = "Rob Wiederstein"
+
+  [params.publisher]
+    name = "Rob Wiederstein"
+
+    [params.publisher.logo]
+      url = "logo.png"
+      width = 127
+      height = 40
+
+  [params.logo]
+    url = "logo.png"
+    width = 127
+    height = 40
+
+  [params.image]
+    url = "cover.png"
+    width = 800
+    height = 600
+
+[params.gitalk]
+owner = ""       # Your GitHub ID
+repo = ""        # The repo to store comments
+clientId = ""    # Your client ID
+clientSecret = "" # Your client secret
+
+[params.valine]
+  enable = false
+  language = 'en'
+  appId = 'your appId'
+  appKey = 'your appKey'
+  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
+  verify = false # Verification code
+  avatar = 'mm'
+  placeholder = 'your comments ...'
+  visitor = true
+
+[params.utterances]       # https://utteranc.es/
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+
+[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
